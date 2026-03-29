@@ -10,7 +10,6 @@ func main() {
 	var safeMap sync.Map
 	var wg sync.WaitGroup
 
-	// Горутины пишут в карту
 	for i := 0; i < 100; i++ {
 		wg.Add(1)
 		go func(key int) {
